@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>VEISTNERD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#FF0066" data-border-radius="small"></script>
+</head>
+<body class="font-[&#39;Inter&#39;]">
+    <!--navigation bar -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="h-8 w-auto" src="/assets/logo new veistnerd no backgroung.png" alt="Logo">
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-8">
+                    <a href="#home" class="text-custom font-medium">Home</a>
+                    <a href="#services" class="text-gray-500 hover:text-custom font-medium">Services</a>
+                    <a href="#portofolio" class="text-gray-500 hover:text-custom font-medium">Portfolio</a>
+                    <a href="#contact" class="text-gray-500 hover:text-custom font-medium">Contact</a>
+                </div>
+                <div class="sm:hidden flex items-center">
+                    <button type="button" class="text-gray-500 hover:text-gray-600 transition-transform duration-300" id="mobile-menu-button">
+                        <span class="sr-only">Open menu</span>
+                        <i class="fas fa-bars text-xl transition-transform duration-300 ease-in-out" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="sm:hidden hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50">Home</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50">Services</a>
+                <a href="#portofolio" class="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50">Portfolio</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Home Section -->
+    <main>
+        <section class="pt-24 pb-16 bg-gradient-to-r from-custom to-purple-500" id="home">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="text-white">
+                        <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">Transform Your Ideas Into Beautiful Designs</h1>
+                        <p class="text-lg mb-8 opacity-90">Kami bantu bisnismu bikin identitas visual keren dan pengalaman brand yang berkesan, biar makin nyambung ke audiens dan tumbuh pesat. Plus, siap ngerjain tugas desainmu juga!</p>
+                        <div class="flex flex-wrap gap-4">
+                            <button class="!rounded-button bg-white text-custom px-8 py-3 font-semibold hover:bg-gray-100 transition-colors" onclick="scrollToServices()">Get Started</button>
+                            <button class="!rounded-button border-2 border-white text-white px-8 py-3 font-semibold hover:bg-white/10 transition-colors" onclick="scrollToPortofolio()">View Portfolio</button>
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <img src="/assets/model.jpg" alt="Design Elements" class="w-full h-auto"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Services-->
+        <section class="py-16 bg-gray-50" id="services">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Design Services</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Pilih layanan desain lengkap kami yang pas banget buat kebutuhanmu! ✨ Harga? Tenang, super affordable buat pelajar dan mahasiswa!💸🔥</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-custom/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-pen-nib text-custom text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Desain Logo</h3>
+                        <p class="text-gray-600 mb-6">Ciptakan identitas merek yang mudah diingat yang membedakan Anda dari pesaing</p>
+                        <a href="/services/logo.html" class="text-custom font-medium hover:text-[#9900CC]">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-custom/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-paint-brush text-custom text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Desain Poster</h3>
+                        <p class="text-gray-600 mb-6">Poster menarik yang secara efektif mengomunikasikan pesan Anda</p>
+                        <a href="/services/poster.html" class="text-custom font-medium hover:text-[#9900CC]">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-custom/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-solid fa-object-group text-custom text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Desain Infografis</h3>
+                        <p class="text-gray-600 mb-6">Infografis keren, informatif, dan estetik bikin kontenmu makin menarik!</p>
+                        <a href="/services/infografis.html" class="text-custom font-medium hover:text-[#9900CC]">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-custom/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-box text-custom text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Desain Packaging</h3>
+                        <p class="text-gray-600 mb-6">Solusi pengemasan inovatif yang meningkatkan daya tarik produk</p>
+                        <a href="/services/packaging.html" class="text-custom font-medium hover:text-[#9900CC]">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-custom/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-solid fa-id-card-clip text-custom text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Desain ID card</h3>
+                        <p class="text-gray-600 mb-6">Desain ID Card kreatif, profesional, dan berkualitas untuk identitasmu!</p>
+                        <a href="/services/idcard.html" class="text-custom font-medium hover:text-[#9900CC]">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-custom/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-pencil-ruler text-custom text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Desain Banner</h3>
+                        <p class="text-gray-600 mb-6">Desain banner kreatif, menarik, dan profesional untuk bisnismu!</p>
+                        <a href="/services/banner.html" class="text-custom font-medium hover:text-[#9900CC]">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Portofolio-->
+    <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="portofolio">
+        <header class="text-center mb-16">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">VEISTNERD Portfolio</h1>
+            <p class="mt-4 text-lg text-gray-600">Hasil Desain yang kami kerjakan</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/banner_polinema.png" alt="Portfolio item 1" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/bussines_card.png" alt="Portfolio item 2" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/coklatbox.png" alt="Portfolio item 3" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/coverbook.png" alt="Portfolio item 4" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/coverbook2.png" alt="Portfolio item 5" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/idcard_veistnerd.png" alt="Portfolio item 6" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/jersey_design.png" alt="Portfolio item 7" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/logo_p.png" alt="Portfolio item 8" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/logo_partner.png" alt="Portfolio item 5" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/poster_agama.png" alt="Portfolio item 6" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/poster_tahugeprek.png" alt="Portfolio item 7" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/sertifikat.png" alt="Portfolio item 8" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/t-shirt_design.png" alt="Portfolio item 9" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/thankscard.png" alt="Portfolio item 10" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/poster_ayamtangkap.png" alt="Portfolio item 11" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/topi 74th bekasi.jpg" alt="Portfolio item 12" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+        </div>
+
+        <section class="text-center mb-20">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Us</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600">Kami selalu kasih yang terbaik di setiap desain! Sebagai partner terpercaya, kami siap bantu wujudkan visimu dengan kreatif dan detail.</p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center p-6">
+                <div class="w-16 h-16 mx-auto mb-4 bg-custom rounded-full flex items-center justify-center">
+                    <i class="fas fa-pencil-ruler text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Competitive Pricing</h3>
+                <p class="text-gray-600">Harga ramah di kantong, kualitas tetap juara tanpa kompromi!</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="w-16 h-16 mx-auto mb-4 bg-custom rounded-full flex items-center justify-center">
+                    <i class="fas fa-star text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Professional Design</h3>
+                <p class="text-gray-600">Tim kami siap bikin desain keren dan profesional buat naikin branding kamu!</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="w-16 h-16 mx-auto mb-4 bg-custom rounded-full flex items-center justify-center">
+                    <i class="fas fa-clock text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Timely Delivery</h3>
+                <p class="text-gray-600">Kami paham betapa pentingnya deadline dan selalu kerja cepat!</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="w-16 h-16 mx-auto mb-4 bg-custom rounded-full flex items-center justify-center">
+                    <i class="fas fa-comments text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Client Relationships</h3>
+                <p class="text-gray-600">Membangun hubungan jangka panjang dengan layanan keren dan komunikasi asik!</p>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-900 text-white py-12" id="contact">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img class="h-8 w-auto mb-4" src="/assets/logo new veistnerd no backgroung.png" alt="Logo"/>
+                    <p class="text-gray-400">Turn your cool ideas into cool designs with our creative services!</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/services/Logo.html" class="hover:text-white">Desain Logo</a></li>
+                        <li><a href="/services/Poster.html" class="hover:text-white">Desain Poster</a></li>
+                        <li><a href="/services/Infografis.html" class="hover:text-white">Desain Infografis</a></li>
+                        <li><a href="/services/Packaging.html" class="hover:text-white">Desain Packaging</a></li>
+                        <li><a href="/services/IDcard.html" class="hover:text-white">Desain ID Card</a></li>
+                        <li><a href="/services/Banner.html" class="hover:text-white">Desain Banner</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <a href="https://maps.app.goo.gl/hCBF2dnHHfjQ7tWB8" class="flex items-center hover:text-white">
+                            <i class="fas fa-map-marker-alt w-5"></i>
+                            <span class="ml-2">Depok, Jawa Barat, Indonesia</span>
+                        </a>
+                        <a href="https://wa.me/6283873340475" class="flex items-center hover:text-white">
+                            <i class="fas fa-phone w-5"></i>
+                            <span class="ml-2">0838-9090-9473</span>
+                        </a>
+                        <a href="veistnerd@gmail.com" class="flex items-center hover:text-white">
+                            <i class="fas fa-envelope w-5"></i>
+                            <span class="ml-2">veistnerd@gmail.com</span>
+                        </a>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/VEISTNERD?t=Vl6if7DVnVZrEB1bbXyi_Q&s=09" class="hover:text-custom"><i class="fab fa-x text-xl"></i></a>
+                        <a href="https://t.me/testiveistnerd" class="hover:text-custom"><i class="fab fa-telegram text-xl"></i></a>
+                        <!--<a href="#" class="hover:text-custom"><i class="fab fa-instagram text-xl"></i></a>-->
+                        <!--<a href="#" class="hover:text-custom"><i class="fab fa-linkedin text-xl"></i></a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2025 VEISTNERD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("mobile-menu-button").addEventListener("click", function () {
+        const menu = document.getElementById("mobile-menu");
+        const icon = document.getElementById("menu-icon");
+        menu.classList.toggle("hidden");
+        
+        if (menu.classList.contains("hidden")) {
+            icon.classList.remove("fa-times", "rotate-180");
+            icon.classList.add("fa-bars", "rotate-0");
+        } else {
+            icon.classList.remove("fa-bars", "rotate-0");
+            icon.classList.add("fa-times", "rotate-180");
+        }
+    });
+    </script>
+    <script src="home.js"></script>
+</body>
+

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEISTNERD-LOGO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#FF0066" data-border-radius="small"></script>
+</head>
+<body class="bg-gray-50">
+    <!--navbar-->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="h-8 w-auto" src="/assets/logo new veistnerd no backgroung.png" alt="Logo">
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-8">
+                    <a href="/index.html" class="text-custom font-medium">Home</a>
+                    <a href="#portofolio" class="text-gray-500 hover:text-custom font-medium">Portofolio</a>
+                    <a href="#cara-order" class="text-gray-500 hover:text-custom font-medium">Cara Order</a>
+                    <a href="#terms-and-condition" class="text-gray-500 hover:text-custom font-medium">Terms & Conditions</a>
+                </div>
+                <div class="sm:hidden flex items-center">
+                    <button type="button" class="text-gray-500 hover:text-gray-600 transition-transform duration-300" id="mobile-menu-button">
+                        <span class="sr-only">Open menu</span>
+                        <i class="fas fa-bars text-xl transition-transform duration-300 ease-in-out" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="sm:hidden hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="/index.html" class="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50">Home</a>
+                <a href="#portofolio" class="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50">Portofolio</a>
+                <a href="#cara-order" class="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50">Cara Order</a>
+                <a href="#terms-and-condition" class="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50">Terms & Conditions</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="text-center mb-12">
+                <h1 class="text-3xl font-bold text-gray-900 mb-4">Design Services & Pricing</h1>
+                <p class="text-gray-600 max-w-2xl mx-auto">Pilih paket desain yang pas banget buat kebutuhan kamu!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="flex justify-center">
+                    <div>
+                        <span class="text-6xl font-bold text-pink-400">POSTER</span>
+                    </div>
+                </div>
+
+                <div class="border border-custom rounded-lg p-6 bg-white">
+                    <h3 class="text-lg font-semibold mb-4">Standard Package</h3>
+                    <div class="flex items-baseline mb-4">
+                        <span class="text-2xl font-bold">Rp.75k</span>
+                        <span class="text-gray-500 ml-1">/project</span>
+                    </div>
+                    <div class="border-t border-gray-200 pt-6"><div class="flex items-center text-gray-600 mb-4">
+                        <i class="far fa-clock text-custom mr-2"></i>
+                        <span>1-3 day delivery</span>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-custom mr-2"></i>
+                            <span>File Master CDR/PSD</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-custom mr-2"></i>
+                            <span>Export File JPG/PNG/PDF</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-custom mr-2"></i>
+                            <span>Revisi 3x</span>
+                        </li>
+                    </ul>
+                    <button id="waButton" class="w-full bg-custom text-white py-2 px-4 !rounded-button hover:bg-custom/90 transition-colors">
+                        Pesan Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Portofolio-->
+    <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="portofolio">
+        <header class="text-center mb-16">
+            <h1 class="text-1xl md:text-2xl lg:text-3xl font-bold text-gray-900">Recent Work</h1>
+            <p class="mt-4 text-lg text-gray-600">Creative solutions for innovative brands</p>
+        </header>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/banner_polinema.png" alt="Portfolio item 1" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/bussines_card.png" alt="Portfolio item 2" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/coklatbox.png" alt="Portfolio item 3" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/coverbook.png" alt="Portfolio item 4" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/coverbook2.png" alt="Portfolio item 5" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/idcard_veistnerd.png" alt="Portfolio item 6" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/jersey_design.png" alt="Portfolio item 7" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/logo_p.png" alt="Portfolio item 8" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/logo_partner.png" alt="Portfolio item 5" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/poster_agama.png" alt="Portfolio item 6" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/poster_tahugeprek.png" alt="Portfolio item 7" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/sertifikat.png" alt="Portfolio item 8" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/t-shirt_design.png" alt="Portfolio item 9" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/thankscard.png" alt="Portfolio item 10" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/poster_ayamtangkap.png" alt="Portfolio item 11" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="/assets/topi 74th bekasi.jpg" alt="Portfolio item 12" class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+        </div>
+        <!--cara order-->
+        <section class="text-center mb-20" id="cara-order">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Cara Order</h2>
+            <div class="max-w-6xl mx-auto px-4 py-8">
+                <div class="max-w-6xl mx-auto px-4 py-8">
+                    <div class="flex justify-center items-start gap-16 flex-wrap md:flex-nowrap">
+                        <div class="flex flex-col items-center gap-4 w-[calc(50%-2rem)] md:w-auto mb-8 md:mb-0">
+                            <div class="w-20 h-20 bg-custom rounded-lg flex items-center justify-center">
+                                <i class="fas fa-solid fa-list-ul text-white text-2xl"></i>
+                            </div>
+                            <p class="text-gray-800 text-sm font-medium uppercase tracking-wide">Brief Design</p>
+                        </div>
+                        
+                        <div class="flex flex-col items-center gap-4 w-[calc(50%-2rem)] md:w-auto mb-8 md:mb-0">
+                            <div class="w-20 h-20 bg-custom rounded-lg flex items-center justify-center">
+                                <i class="fas fa-credit-card text-white text-2xl"></i>
+                            </div>
+                            <p class="text-gray-800 text-sm font-medium uppercase tracking-wide">Payment</p>
+                        </div>
+                        
+                        <div class="flex flex-col items-center gap-4 w-[calc(50%-2rem)] md:w-auto mb-8 md:mb-0">
+                            <div class="w-20 h-20 bg-custom rounded-lg flex items-center justify-center">
+                                <i class="fas fa-pencil-ruler text-white text-2xl"></i>
+                            </div>
+                            <p class="text-gray-800 text-sm font-medium uppercase tracking-wide">Design Process</p>
+                        </div>
+                        
+                        <div class="flex flex-col items-center gap-4 w-[calc(50%-2rem)] md:w-auto mb-8 md:mb-0">
+                            <div class="w-20 h-20 bg-custom rounded-lg flex items-center justify-center">
+                                <i class="fas fa-user-check text-white text-2xl"></i>
+                            </div>
+                            <p class="text-gray-800 text-sm font-medium uppercase tracking-wide">Revision &amp; Deal</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <button id="backToTop" class="fixed bottom-8 right-8 bg-custom bg-opacity-80 text-white p-4 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-opacity-100">            
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <!--Terms and Conditon-->
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8" id="terms-and-condition">
+            <section class="py-12 md:py-16">
+                <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-sm p-8 md:p-10">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-8">Terms &amp; Conditions</h1>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-dollar-sign mt-1 text-gray-600 w-6"></i>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold mb-2">Pricing</h3>
+                                <p class="text-gray-600">Harga awal adalah tarif dasar. Biaya akhir akan disesuaikan dengan kompleksitas proyek dan persyaratan klien tertentu.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-sync mt-1 text-gray-600 w-6"></i>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold mb-2">Revision Policy</h3>
+                                <p class="text-gray-600">Maksimal revisi sesuai dengan project desain yang dipesan (tidak termasuk revisi minor). Revisi tambahan akan dikenakan biaya tambahan.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-credit-card mt-1 text-gray-600 w-6"></i>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold mb-2">Payment Terms</h3>
+                                <p class="text-gray-600">Deposit 50% diperlukan sebelum proyek dimulai. Kebijakan ini diterapkan untuk memastikan komitmen dan mencegah pengabaian proyek.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-undo mt-1 text-gray-600 w-6"></i>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold mb-2">Refund Policy</h3>
+                                <p class="text-gray-600">No refunds setelah pekerjaan desain dimulai. Termasuk setoran awal.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-pencil-ruler mt-1 text-gray-600 w-6"></i>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold mb-2">Custom Designs</h3>
+                                <p class="text-gray-600">Kami menerima permintaan desain khusus di luar katalog standar kami. Silahkan hubungi kami untuk mendiskusikan kebutuhan spesifik Anda.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <button class="!rounded-button bg-custom text-white px-6 py-3 font-medium hover:bg-opacity-90 transition-colors w-full md:w-auto">
+                            <i href="" class="fas fa-envelope mr-2"></i>
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="bg-gray-900 text-white py-12" id="contact">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img class="h-8 w-auto mb-4" src="/assets/logo new veistnerd no backgroung.png" alt="Logo"/>
+                    <p class="text-gray-400">Turn your cool ideas into cool designs with our creative services!</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/services/Logo.html" class="hover:text-white">Desain Logo</a></li>
+                        <li><a href="/services/Poster.html" class="hover:text-white">Desain Poster</a></li>
+                        <li><a href="/services/Infografis.html" class="hover:text-white">Desain Infografis</a></li>
+                        <li><a href="/services/Packaging.html" class="hover:text-white">Desain Packaging</a></li>
+                        <li><a href="/services/IDcard.html" class="hover:text-white">Desain ID Card</a></li>
+                        <li><a href="/services/Banner.html" class="hover:text-white">Desain Banner</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <a href="https://maps.app.goo.gl/hCBF2dnHHfjQ7tWB8" class="flex items-center hover:text-white">
+                            <i class="fas fa-map-marker-alt w-5"></i>
+                            <span class="ml-2">Depok, Jawa Barat, Indonesia</span>
+                        </a>
+                        <a href="https://wa.me/6283873340475" class="flex items-center hover:text-white">
+                            <i class="fas fa-phone w-5"></i>
+                            <span class="ml-2">0838-9090-9473</span>
+                        </a>
+                        <a href="veistnerd@gmail.com" class="flex items-center hover:text-white">
+                            <i class="fas fa-envelope w-5"></i>
+                            <span class="ml-2">veistnerd@gmail.com</span>
+                        </a>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/VEISTNERD?t=Vl6if7DVnVZrEB1bbXyi_Q&s=09" class="hover:text-custom"><i class="fab fa-x text-xl"></i></a>
+                        <a href="https://t.me/testiveistnerd" class="hover:text-custom"><i class="fab fa-telegram text-xl"></i></a>
+                        <!--<a href="#" class="hover:text-custom"><i class="fab fa-instagram text-xl"></i></a>-->
+                        <!--<a href="#" class="hover:text-custom"><i class="fab fa-linkedin text-xl"></i></a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2025 VEISTNERD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("mobile-menu-button").addEventListener("click", function () {
+        const menu = document.getElementById("mobile-menu");
+        const icon = document.getElementById("menu-icon");
+        menu.classList.toggle("hidden");
+        
+        if (menu.classList.contains("hidden")) {
+            icon.classList.remove("fa-times", "rotate-180");
+            icon.classList.add("fa-bars", "rotate-0");
+        } else {
+            icon.classList.remove("fa-bars", "rotate-0");
+            icon.classList.add("fa-times", "rotate-180");
+        }
+    });
+    </script>
+    <script src="/services/services.js"></script>
+</body>
+</html>
