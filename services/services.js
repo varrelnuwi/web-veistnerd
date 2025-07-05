@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('Button clicked');
         
         // Update window location.href with your WhatsApp number
-        window.location.href = "https://wa.me/6283873340475";
+        window.location.href = "https://wa.me/6283890909473";
     });
 });
 
