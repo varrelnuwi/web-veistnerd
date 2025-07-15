@@ -23,15 +23,14 @@ if (menuButton && menuList) {
 }
 
 // Pesan Sekarang Button
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("waButton").addEventListener("click", function() {
-        // Add a console.log to verify if the click event is triggered
-        console.log('Button clicked');
-        
-        // Update window location.href with your WhatsApp number
-        window.location.href = "https://wa.me/6283890909473";
+document.getElementById("waButton").addEventListener("click", function () {
+        const nomor = "6281234567890"; // Ganti dengan nomor WhatsApp tujuan (gunakan format internasional)
+        const pesan = "Halo, saya ingin memesan produk Anda."; // Pesan default
+        const url = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
+
+        // Redirect ke WhatsApp
+        window.open(url, "_blank"); // Buka di tab baru
     });
-});
 
 //floating button up
 const backToTop = document.getElementById('backToTop');
